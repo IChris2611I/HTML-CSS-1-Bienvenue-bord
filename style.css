@@ -50,7 +50,7 @@ p {
 header {
   background-color: A306B6;
   width: auto;
-  height: 50vh;
+  height: auto;
 }
 
 .nav-header {
@@ -76,20 +76,20 @@ header {
 
 .header-container {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
 
   h1 {
-    margin-right: 10rem;
     font-size: 3.125rem;
   }
 
   img {
-    height: 20rem;
-    margin-left: 10rem;
+    max-width: 15rem;
     background-color: rgb(255, 255, 255);
     border: 0.5rem solid white;
     border-radius: 50%;
+    margin-bottom: 20px;
   }
 }
 
