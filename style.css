@@ -1,0 +1,286 @@
+/*GLOBAL CSS*/
+
+* {
+  margin: 0;
+  padding: 0;
+
+  h1 {
+    color: white;
+  }
+
+  h2 {
+    color: #a306b6;
+    font-size: 3.125rem;
+  }
+  button {
+    color: white;
+    background-color: #a306b6;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    font-weight: bold;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+a,
+p {
+  font-family: "Source sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+  text-decoration: none;
+}
+
+/*HEADER CSS */
+
+header {
+  background-color: A306B6;
+  width: auto;
+  height: auto;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 0.625rem;
+}
+
+.logo-nav {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.ul-nav {
+  display: flex;
+  justify-content: space-between;
+
+  li {
+    margin: 1.25rem 2.5rem;
+  }
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  h1 {
+    font-size: 3.125rem;
+  }
+
+  img {
+    max-width: 15rem;
+    background-color: rgb(255, 255, 255);
+    border: 0.5rem solid white;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+/* MAIN CSS */
+
+main {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* SECTION CSS */
+
+/* FIRST SECTION */
+
+.first-section {
+  height: 50%;
+  margin-bottom: 6.25rem;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+    padding: 1.875rem;
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+
+  .card {
+    background-color: #d9d9d9;
+    border-radius: 0.625rem;
+    margin: 0 1.25rem;
+    width: 300px;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .content-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      padding-bottom: 0.625rem;
+      font-size: 1.5625rem;
+    }
+
+    button {
+      width: 30%;
+      padding: 0.5rem;
+      margin-bottom: 0.625rem;
+      border: 0rem;
+      border-radius: 2rem;
+    }
+  }
+}
+.card1 .card-img {
+  background: url(./images/responsive.png) no-repeat center;
+  background-size: contain;
+  height: 100%;
+}
+
+.card2 .card-img {
+  background: url(./images/scalable.png) no-repeat center;
+  background-size: contain;
+  height: 100%;
+}
+
+.card3 .card-img {
+  background: url(./images/inclusive.png) no-repeat center;
+  background-size: contain;
+  height: 100%;
+}
+
+/* SECOND SECTION */
+
+.second-section {
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    height: 60%;
+    width: 30%;
+    margin: 30px;
+    color: black;
+    overflow-wrap: break-word;
+  }
+
+  p:first-of-type {
+    margin-bottom: -0.3125rem;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #d9d9d9;
+  margin-top: 1.25rem;
+
+  a {
+    color: #a306b6;
+  }
+
+  p {
+    color: black;
+    text-align: center;
+  }
+
+  p:first-of-type {
+    margin-top: 1.875rem;
+  }
+
+  p:last-of-type {
+    margin-bottom: 1.875rem;
+  }
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+  .nav-header {
+    flex-direction: column;
+
+    .logo-nav {
+      align-self: center;
+      height: 8rem;
+      width: 8rem;
+      margin-bottom: -30px;
+    }
+
+    .ul-nav {
+      justify-content: center;
+      font-size: 50px;
+    }
+  }
+
+  .header-container {
+    flex-direction: column-reverse;
+    height: auto;
+    h1 {
+      margin-top: 20px;
+      margin-right: 0;
+    }
+    img {
+      height: 12rem;
+      margin-left: 0px;
+      border: 0.2rem solid white;
+    }
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+
+    .card {
+      width: 90%;
+      height: 50rem;
+      margin-bottom: 50px;
+    }
+
+    .content-card {
+      h3 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      button {
+        margin-bottom: 20px;
+        padding: 15px;
+        width: 20%;
+        font-size: 30px;
+      }
+    }
+  }
+
+  .second-section {
+    h2 {
+      margin-top: -100px;
+    }
+
+    p {
+      width: 90%;
+    }
+  }
+}
